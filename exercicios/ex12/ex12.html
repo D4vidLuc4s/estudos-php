@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 12</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<a href="../../index.html">Voltar</a>
+<div class="col-sm-6 col-sm-offset-3">
+    <h3>Digite uma palavra</h3>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="word">Palavra: </label>
+            <input type="text" class="form-control" name="word" id="word">
+            <span class="help-block" id="errword"></span><p></p>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            Palavra:
+            <br>
+            <span id="wordRepeat"></span><p></p>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex12.js"></script>
+</body>
+</html>

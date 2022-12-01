@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Exercicio 4</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="col-sm-6 col-sm-offset-3">
+    <h1>Informe três números</h1>
+    <form method="POST" id="form">
+        <div class="form-group">
+            <label for="n1">Digite o 1º número: </label>
+            <input type="number" class="form-control" name="n1" id="n1">
+            <span class="help-block" id="errn1"></span><p></p>
+            <label for="n2">Digite o 2º número: </label>
+            <input type="number" class="form-control" name="n2" id="n2">
+            <span class="help-block" id="errn2"></span><p></p>
+            <label for="n3">Digite o 3º número: </label>
+            <input type="number" class="form-control" id="n3" name="n3">
+            <span class="help-block" id="errn3"></span><p></p>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            Ordem dos números:
+            <span id="numorder"></span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex4.js"></script>
+</body>
+</html>

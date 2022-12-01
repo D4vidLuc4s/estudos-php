@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 5</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<a href="../../index.html" id="back">Voltar</a>
+<div class="col-sm-6 col-sm-offset-3">
+    <h1>Informe os lados do triângulo</h1>
+    <h5>Exemplo de pontos do triângulo: </h5>
+    <img src="triangulos.png">
+    <p></p>
+    <form method="POST" id="form">
+        <div class="form-group">
+            <label for="ab">Informe o lado AB do triângulo: </label>
+            <input type="number" class="form-control" name="ab" id="ab">
+            <sapn class="help-block" id="errab"></sapn><p></p>
+            <label for="bc">Informe o lado BC do triângulo: </label>
+            <input type="number" class="form-control" name="bc" id="bc">
+            <span class="help-block" id="errbc"></span><p></p>
+            <label for="ca">Informe o lado CA do triângulo</label>
+            <input type="number" class="form-control" name="ca" id="ca">
+            <span class="help-block" id="errca"></span><p></p>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            O triângulo é:
+            <span id="triangletype"></span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex5.js"></script>
+</body>
+</html>

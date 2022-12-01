@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 15</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<a href="../../index.html">Voltar</a>
+<div class="col-sm-6 col-sm-offset-3">
+    <h4>Na usina de Angra dos Reis, os técnicos analisam a perda de massa de um material
+        radioativo. Sabendo-se que este perde 25% de sua massa a cada 30 segundos, criar um
+        algoritmos que imprima o tempo necessário para que a massa desse material seja menor
+        que 0.10</h4>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="massa">Massa: </label>
+            <input type="number" class="form-control" name="massa" id="massa">
+            <span class="help-block" id="errmassa"></span><p></p>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            Tempo:
+            <span id="time"></span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex15.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 18</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<a href="../../index.html">Voltar</a>
+<div class="col-sm-6 col-sm-offset-3">
+    <h4>Informe 10 números em cada campo</h4>
+    <p>Obs: Separe os números por espaço.</p>
+    <p>Ex: 1 5 8 14</p>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="numUm">Grupo um: </label>
+            <input type="text" class="form-control" name="numUm" id="numUm">
+            <span class="help-block" id="errNumUm"></span><p></p>
+            <label for="numDois">Grupo dois: </label>
+            <input type="text" class="form-control" name="numDois" id="numDois">
+            <span class="help-block" id="errNumDois"></span><p></p>
+        </div>
+        <button type="submit" class="btn btn-success">submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            Números incomuns:
+            <span id="incomuns"></span><p></p>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex18.js"></script>
+</body>
+</html>

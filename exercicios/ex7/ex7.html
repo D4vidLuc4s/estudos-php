@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Exercicio 7</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<a href="../../index.html" id="back">Voltar</a>
+<div class="col-sm-6 col-sm-offset-3">
+    <h1>Informe o nome do livro</h1>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="book">Informe o nome do livro: </label>
+            <input type="text" class="form-control" name="book" id="book">
+            <span class="help-block" id="errbook"></span><p></p>
+            <select class="form-select" name="choose" id="choose" aria-label="Default select example">
+                <option selected>Selecione seu acesso</option>
+                <option value="aluno" id="aluno">Aluno</option>
+                <option value="prof" id="prof">Professor</option>
+            </select>
+            <span class="help-block" id="errtitle"></span>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            Devolução:
+            <span id="devolution"></span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex7.js"></script>
+</body>
+</html>

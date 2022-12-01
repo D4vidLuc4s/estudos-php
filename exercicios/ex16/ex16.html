@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 15</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<a href="../../index.html">Voltar</a>
+<div class="col-sm-6 col-sm-offset-3">
+    <h4>Informe 15 números inteiros e será mostrado se ele é par ou impar.</h4>
+    <p>Obs: Separe os números por espaço.</p>
+    <p>Ex: 1 5 8 14</p>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="nums">Números: </label>
+            <input type="text" class="form-control" name="nums" id="nums">
+            <span class="help-block" id="errnums"></span><p></p>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            Pares:
+            <span id="numPar"></span><p></p>
+            Impares:
+            <span id="numImpar"></span><p></p>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex16.js"></script>
+</body>
+</html>

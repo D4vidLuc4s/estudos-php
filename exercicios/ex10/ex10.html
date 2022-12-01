@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 10</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<a href="../../index.html">Voltar</a>
+<div class="col-sm-6 col-sm-offset-3">
+    <h4>Informe 20 números e será mostrado a soma dos positivos e o total dos negativos.</h4>
+    <p>Obs: Separe os números por espaço.</p>
+    <p>Ex: 1 2 3 4</p>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="num">Digite 20 números</label>
+            <input type="text" class="form-control" name="num" id="num">
+            <span class="help-block" id="errnum"></span><p></p>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            Soma:
+            <span id="posSum"></span><p></p>
+            Negativos:
+            <span id="negative"></span><p></p>
+            Total:
+            <span id="total"></span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex10.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Exercicio 3</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="col-sm-6 col-sm-offset-3">
+    <h1>Cadastro de pessoa</h1>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="nome">Informe seu nome: </label>
+            <input type="text" class="form-control" id="nome" name="nome">
+            <span class="help-block" id="errname"></span><p></p>
+            <label for="idade">Informe sua idade: </label>
+            <input type="number" class="form-control" id="idade" name="idade">
+            <span class="help-block" id="errage"></span><p></p>
+            <label for="genero">Informe seu gênero: </label>
+            <select name="genero" class="form-control" id="genero">
+                <option value="">--</option>
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+            </select>
+            <span class="help-block" id="errgender"></span>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessageSuccess" class="alert alert-success">
+            Nome:
+            <span id="username"></span>
+            Status:
+            <span id="status"></span>
+        </div>
+        <div id="showMessageWarning" class="alert alert-warning">
+            Nome:
+            <span id="username"></span>
+            Status:
+            <span id="status"></span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex3.js"></script>
+</body>
+</html>

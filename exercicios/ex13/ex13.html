@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 13</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<a href="../../index.html">Voltar</a>
+<div class="col-sm-6 col-sm-offset-3">
+    <h2>Digite quantos números quiser entre 0 e 9999</h2>
+    <h4>Será mostrado quantos números entre 100 e 200 foram digitados</h4>
+    <h5>Obs: Não precisa separar por virgula</h5>
+    <h5>Ex: 1 4 25 300</h5>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="numbers">Números: </label>
+            <input type="text" class="form-control" name="numbers" id="numbers">
+            <span class="help-block" id="errnum"></span><p></p>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            Quantidade:
+            <br>
+            <span id="quantity"></span><p></p>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex13.js"></script>
+</body>
+</html>

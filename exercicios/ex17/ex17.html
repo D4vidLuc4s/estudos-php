@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 17</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<a href="../../index.html">Voltar</a>
+<div class="col-sm-6 col-sm-offset-3">
+    <h4>Informe 20 números inteiros e será mostrado o maior e o menor valor,
+    o percentual de números pares e a média dos elementos.</h4>
+    <p>Obs: Separe os números por espaço.</p>
+    <p>Ex: 1 5 8 14</p>
+    <form method="post" id="form">
+        <div class="form-group">
+            <label for="nums">Números: </label>
+            <input type="text" class="form-control" name="nums" id="nums">
+            <span class="help-block" id="errnums"></span><p></p>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <p></p>
+        <div id="showMessage" class="alert alert-success">
+            Maior:
+            <span id="maior"></span><p></p>
+            Menor:
+            <span id="menor"></span><p></p>
+            Porcentagem dos pares:
+            <span id="porcen"></span>%<p></p>
+            Média:
+            <span id="media"></span><p></p>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="ex17.js"></script>
+</body>
+</html>
